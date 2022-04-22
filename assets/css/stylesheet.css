@@ -21,6 +21,12 @@ img {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    animation: zoom-out 2s linear infinite; 
+}
+@keyframes zoom-out{
+    100%{
+        width:100%
+    }
 }
 
 .text_box {
@@ -28,7 +34,7 @@ img {
     position: absolute;
     top: 200px;
     left: 100px;
-    color: #fff;
+    color: #fff
 }
 
 .text_box h1 {
@@ -42,22 +48,99 @@ img {
 }
 
 .text_box span {
-    background: blueviolet;
+    position: absolute;
+    left: 0;
+    background:red;
+    height: 2px;
+    width: 100px;
 
 }
 
 .banner_1 {
     animation: slide1 12s linear infinite;
+    
 }
 
 .banner_2 {
-    animation: slide1 12s linear infinite;
+    animation: slide2 12s linear infinite;
+    
 }
 
 .banner_3 {
-    animation: slide1 12s linear infinite;
+    animation: slide3 12s linear infinite;
 }
 
 .banner_4 {
-    animation: slide1 12s linear infinite;
+    animation: slide4 12s linear infinite;
+}
+
+@keyframes slide1{
+    0% {
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes slide2{
+    0% {
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide3{
+    0% {
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide4{
+    0% {
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
 }
